@@ -57,6 +57,10 @@ li {
   list-style-type: none;
 }
 
+img {
+  transition: all 0.2s ease-out;
+}
+
 .h2-headline {
   width: 327px;
   height: 27px;
@@ -221,6 +225,7 @@ li {
   order: 0;
   flex-grow: 0;
   margin: auto;
+  transition: all 0.2s ease-in;
 }
 
 .right-block {
@@ -568,6 +573,13 @@ li {
   color: #fff;
   font-weight: 700;
   margin-bottom: 20px;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  from { background-color: #ff6b00; }
+  to { background-color: blue; }
 }
 
 .social-media-container {
@@ -601,6 +613,19 @@ li {
   flex: none;
   order: 0;
   flex-grow: 0;
+}
+
+.project1:hover,
+.project1-card:hover {
+  transform: scale(1.05);
+}
+
+.desktop-header > a:hover {
+  transform: scale(1.05);
+}
+
+.logo:hover {
+  transform: scale(1.05);
 }
 
 @media screen and (min-width: 768px) {
