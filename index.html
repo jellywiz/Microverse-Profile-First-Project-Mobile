@@ -13,13 +13,27 @@
     <header>
         <nav class="navbar">
             <a class='logo'>Muzaffer Dler</a>
-            <img class="ulnavbar" src="./img/Union.svg" alt="Menu button">
+
+            <div class="desktop-nav">
+                <div class="desktop-header">
+                    <a class="desktop-header-item" href="">Portfolio</a>
+                    <a class="desktop-header-item" href="">About</a>
+                    <a class="desktop-header-item" href="">Contact</a>
+                    <img class="email" src="./img/Disabled.png" alt="email button">
+                </div>
+            </div>
+            <div class="hamburger">
+                <img class="ulnavbar" src="./img/Union.svg" alt="Menu button">
+            </div>
         </nav>
+
     </header>
     <section class="headline">
-        <h1>Hey There. I’m Muzaffer</h1>
-        <h2 class="h2-headline">I am a software developer</h2>
-        <p class="headline-description">I can help you build a product. feature or website Look through some of my work and experience! if you like what you see and have a project you need coded, don't hestiate to contact me</p>
+        <div class="desktop-headline">
+            <h1>Hey There. I’m Muzaffer</h1>
+            <h2 class="h2-headline">I am a software developer</h2>
+            <p class="headline-description">I can help you build a product. feature or website Look through some of my work and experience! if you like what you see and have a project you need coded, don't hestiate to contact me</p>
+        </div>
         <ul class="social-media">
             <li class="social-media-item"><a href=""><img src="./img/github.svg" alt=""></a></li>
             <li class="social-media-item"><a href=""><img src="./img/Linkedinicon.svg" alt=""></a></li>
@@ -215,11 +229,11 @@
             <hr>
             <textarea class="form-element form-element-email" name="" id="" cols="30" rows="5" placeholder="Enter your text" maxlength="500" required></textarea> <br>
             <button type="submit" class="informationbutton">Get in touch</button>
+            <hr class="social-media-line">
         </form>
     </section>
 
     <footer class="social-media-container">
-        <!-- <hr class="social-media-line"> -->
             <ul class="social-media-item1">
                 <li><img class="social-media-element" src="./img/github.png" alt=""></li>
                 <li><img class="social-media-element" src="./img/linkedin.png" alt=""></li>
