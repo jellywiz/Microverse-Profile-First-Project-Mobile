@@ -530,6 +530,7 @@ li {
 }
 
 .form-element-height {
+  border-bottom: solid #dbd8d7;
   height: 18px;
   color: #3c3a39;
   opacity: 1;
@@ -627,7 +628,6 @@ li {
     justify-content: space-between;
     align-items: flex-end;
     padding: 26px;
-    width: 100%;
     margin: 0;
   }
 
@@ -715,9 +715,85 @@ li {
 
   .right-block-btn{
     display: block;
-    /* position: absolute;
-    left: 1142px;
-    top: 1675px;
-    margin: 0; */
+  }
+
+  .word-cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .work{
+    margin-left: 30px;
+  }
+
+  .work1{
+    padding-top: 0;
+  }
+
+  .work-card1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 30px;
+
+  }
+
+  .about-me-headline-container{
+    background-image: url(../img/illustraction/illustration-about\ me.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 120px 0 120px 0;
+    width: 100%;
+  }
+
+  .about-me-headline{
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 200px;
+    width: 30%;
+  }
+
+  .about-me-header{
+    width: 566px;
+    height: 78px;
+  }
+
+  .about-me-description{
+    width: 566px;
+    height: 148px;
+  }
+
+  .resourcesection {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 152px;
+    padding-left: 400px;
+    width: 100%;
+  }
+  .source{
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .subline{
+    margin-right: auto;
+    text-align: left;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .form-header{
+    width: 455px;
+    height: 256px;
+    color: #262626;
+    padding-left: 300px;
   }
 }
