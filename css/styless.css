@@ -320,6 +320,7 @@ li {
   color: #fff;
   transition: all 0.5s ease-in;
   margin: auto;
+  border: 1px;
 }
 
 .work1 {
@@ -389,6 +390,7 @@ li {
   color: white;
   font-size: 20px;
   background: #ff6b00;
+  border: 1px;
 }
 
 .about-me-container {
@@ -446,6 +448,7 @@ li {
   font-weight: 700;
   margin-top: 50px;
   margin-bottom: 200px;
+  border: 1px;
 }
 
 .resourcesection {
@@ -568,6 +571,7 @@ li {
   color: #fff;
   font-weight: 700;
   margin-bottom: 20px;
+  border: 1px;
 }
 
 .social-media-container {
@@ -637,6 +641,11 @@ li {
     margin-bottom: 10px;
   }
 
+  .headline-description {
+    width: 566px;
+    height: 123px;
+  }
+
   .hamburger {
     display: none;
   }
@@ -648,6 +657,7 @@ li {
 
   .desktop-headline {
     padding-left: 250px;
+    padding-bottom: 100px;
     margin: 0;
     font-family: "Crete Round", sans-serif;
     font-style: normal;
@@ -664,7 +674,7 @@ li {
     flex-direction: row;
     align-items: center;
     background-position: right;
-    padding: 120px 0 307px 0;
+    padding: 120px 0 300px 0;
     margin: 0;
     background-image: url(../img/illustraction/Illustration-header.svg);
     background-repeat: no-repeat;
@@ -672,6 +682,7 @@ li {
 
   .social-media {
     position: absolute;
+    height: auto;
     list-style-type: none;
     flex-direction: column;
     flex-basis: 0;
@@ -764,13 +775,13 @@ li {
     flex-direction: row;
     align-items: flex-start;
     gap: 152px;
-    padding-left: 400px;
-    width: 100%;
+    margin: auto;
   }
 
   .source {
     display: flex;
     flex-direction: column;
+    margin: auto;
   }
 
   .subline {
@@ -782,7 +793,7 @@ li {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 100%;
+    width: auto;
   }
 
   .form-header {
@@ -790,5 +801,59 @@ li {
     height: 256px;
     color: #262626;
     padding-left: 300px;
+  }
+
+  .language {
+    margin-bottom: 85px;
+  }
+
+  .project2 {
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../img/ImgPlaceholder0.png);
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    width: 369px;
+    height: 435px;
+  }
+
+  .project3 {
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../img/ImgPlaceholder2.png);
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    width: 369px;
+    height: 435px;
+  }
+
+  .project1 {
+    width: 369px;
+    height: 435px;
+  }
+
+  .project1-hieght {
+    width: 369px;
+    height: 435px;
+  }
+
+  .project1-title {
+    width: 337px;
+    height: 81px;
+  }
+
+  .project1-text {
+    width: 337px;
+    height: 72px;
+  }
+
+  .Project-btn1 {
+    display: none;
+  }
+
+  .Project-btn {
+    margin-top: 40px;
   }
 }
