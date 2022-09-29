@@ -681,4 +681,43 @@ li {
     flex-basis: 0;
     flex-shrink: 0;
   }
+
+  .works{
+    padding: 100px 100px 80px 100px;
+    margin: 0;
+  }
+
+  .works-header-row{
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+  }
+
+  .h2-vector{
+    margin-top: 78px;
+    width: 60%;
+  }
+
+  .featured-image{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .placeholder-img{
+    width: 684px;
+  height: 448px;
+  }
+
+  .right-block{
+    margin-top: 100px;
+  }
+
+  .right-block-btn{
+    display: block;
+    /* position: absolute;
+    left: 1142px;
+    top: 1675px;
+    margin: 0; */
+  }
 }
