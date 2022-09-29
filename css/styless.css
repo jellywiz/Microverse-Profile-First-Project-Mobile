@@ -14,6 +14,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
+  height: auto;
 }
 
 h1 {
@@ -50,6 +51,10 @@ h3 {
 hr {
   width: 85%;
   background: #dbd8d7;
+}
+
+li {
+  list-style-type: none;
 }
 
 .h2-headline {
@@ -152,7 +157,6 @@ hr {
   align-items: center;
   padding: 120px 0;
   gap: 80px;
-  height: 3650px;
   background: #e5e5e5;
 }
 
@@ -188,7 +192,6 @@ hr {
   padding: 0;
   gap: 24px;
   width: 375px;
-  height: 3028px;
   flex: none;
   order: 1;
   flex-grow: 0;
@@ -557,4 +560,39 @@ hr {
   flex-grow: 0;
   color: #fff;
   font-weight: 700;
+}
+
+footer {
+  background: #e5e5e5;
+  width: 100%;
+}
+
+.social-media-container {
+  background: #e5e5e5;
+  text-align: center;
+}
+
+.social-media-line {
+  width: 100%;
+  border: 1px solid #dfe1e6;
+}
+
+.social-media-item1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 80px;
+}
+
+.social-media-element {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
