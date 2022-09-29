@@ -49,6 +49,7 @@ h3 {
 
 hr {
   width: 85%;
+  background: #dbd8d7;
 }
 
 .h2-headline {
@@ -151,7 +152,6 @@ hr {
   align-items: center;
   padding: 120px 0;
   gap: 80px;
-  width: 100%;
   height: 3650px;
   background: #e5e5e5;
 }
@@ -489,7 +489,7 @@ hr {
   color: #fff;
 }
 
-.form {
+.form-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -510,4 +510,51 @@ hr {
   text-align: center;
   margin: 0 0 30px 0;
   width: auto;
+}
+
+.form {
+  margin: auto;
+  text-align: center;
+  width: 80%;
+  padding-top: 20px;
+  opacity: 1;
+}
+
+.form-element-height {
+  height: 18px;
+  color: #3c3a39;
+  opacity: 1;
+}
+
+.form-element {
+  background: #e5e5e5;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #979493;
+  width: 80%;
+  margin: auto;
+  border: none;
+  opacity: 1;
+}
+
+.form-element-email {
+  background: #fbf8f7;
+}
+
+.informationbutton {
+  align-items: center;
+  padding: 12px;
+  width: 131px;
+  height: 48px;
+  background: #ff6b00;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  color: #fff;
+  font-weight: 700;
 }
