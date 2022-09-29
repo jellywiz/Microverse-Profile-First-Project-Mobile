@@ -566,12 +566,12 @@ li {
 }
 
 .social-media-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    list-style: none;
-    background: #e5e5e5;
-    padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  background: #e5e5e5;
+  padding-top: 20px;
 }
 
 .social-media-line {
