@@ -81,6 +81,10 @@ li {
   padding: 15px;
 }
 
+.desktop-nav {
+  display: none;
+}
+
 .logo {
   font-style: normal;
   font-weight: 700;
@@ -316,6 +320,8 @@ li {
   color: #fff;
   transition: all 0.5s ease-in;
   margin: auto;
+  justify-content: center;
+  border: 1px;
 }
 
 .work1 {
@@ -385,6 +391,7 @@ li {
   color: white;
   font-size: 20px;
   background: #ff6b00;
+  border: 1px;
 }
 
 .about-me-container {
@@ -442,6 +449,7 @@ li {
   font-weight: 700;
   margin-top: 50px;
   margin-bottom: 200px;
+  border: 1px;
 }
 
 .resourcesection {
@@ -526,6 +534,7 @@ li {
 }
 
 .form-element-height {
+  border-bottom: solid #dbd8d7;
   height: 18px;
   color: #3c3a39;
   opacity: 1;
@@ -563,6 +572,7 @@ li {
   color: #fff;
   font-weight: 700;
   margin-bottom: 20px;
+  border: 1px;
 }
 
 .social-media-container {
@@ -596,4 +606,259 @@ li {
   flex: none;
   order: 0;
   flex-grow: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .desktop-nav {
+    display: block;
+  }
+
+  .desktop-header {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 100%;
+    margin-right: 90px;
+  }
+
+  .desktop-header-item {
+    color: #fff;
+    text-decoration: none;
+    margin-top: 5px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 26px;
+    margin: 0;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: row;
+    margin-left: 90px;
+    margin-bottom: 10px;
+  }
+
+  .headline-description {
+    width: 566px;
+    height: 123px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .email {
+    align-self: center;
+    margin-right: 20px;
+  }
+
+  .desktop-headline {
+    padding-left: 250px;
+    padding-bottom: 100px;
+    margin: 0;
+    font-family: "Crete Round", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 65px;
+    line-height: 64px;
+    letter-spacing: 0.37px;
+    color: #f55800;
+    order: 0;
+  }
+
+  .headline {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-position: right;
+    padding: 120px 0 300px 0;
+    margin: 0;
+    background-image: url(../img/illustraction/Illustration-header.svg);
+    background-repeat: no-repeat;
+  }
+
+  .social-media {
+    position: absolute;
+    height: auto;
+    list-style-type: none;
+    flex-direction: column;
+    flex-basis: 0;
+    flex-shrink: 0;
+  }
+
+  .works {
+    padding: 100px 100px 80px 100px;
+    margin: 0;
+  }
+
+  .works-header-row {
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+  }
+
+  .h2-vector {
+    margin-top: 78px;
+    width: 60%;
+  }
+
+  .featured-image {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .placeholder-img {
+    width: 684px;
+    height: 448px;
+  }
+
+  .right-block {
+    margin-top: 100px;
+  }
+
+  .right-block-btn {
+    display: block;
+  }
+
+  .word-cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .work {
+    margin-left: 30px;
+  }
+
+  .work1 {
+    padding-top: 0;
+  }
+
+  .work-card1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 30px;
+  }
+
+  .about-me-headline-container {
+    background-image: url(../img/illustraction/illustration-about\ me.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 120px 0 120px 0;
+    width: 100%;
+  }
+
+  .about-me-headline {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 200px;
+    width: 30%;
+  }
+
+  .about-me-header {
+    width: 566px;
+    height: 78px;
+  }
+
+  .about-me-description {
+    width: 566px;
+    height: 148px;
+  }
+
+  .resourcesection {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 152px;
+    margin: auto;
+  }
+
+  .source {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .subline {
+    margin-right: auto;
+    text-align: left;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+  }
+
+  .form-header {
+    width: 455px;
+    height: 256px;
+    color: #262626;
+    padding-left: 300px;
+  }
+
+  .language {
+    margin-bottom: 85px;
+  }
+
+  .project2 {
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../img/ImgPlaceholder0.png);
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    width: 369px;
+    height: 435px;
+  }
+
+  .project3 {
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../img/ImgPlaceholder2.png);
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    width: 369px;
+    height: 435px;
+  }
+
+  .project1 {
+    width: 369px;
+    height: 435px;
+  }
+
+  .project1-hieght {
+    width: 369px;
+    height: 435px;
+  }
+
+  .project1-title {
+    width: 337px;
+    height: 81px;
+  }
+
+  .project1-text {
+    width: 337px;
+    height: 72px;
+  }
+
+  .Project-btn1 {
+    display: none;
+  }
+
+  .Project-btn {
+    margin-top: 40px;
+  }
+
+  .hr-aboutme {
+    margin-bottom: 180px;
+  }
 }
