@@ -272,7 +272,7 @@ li {
   width: auto;
   height: 40px;
   background: #fff;
-  border: 1px solid #1B62D0;
+  border: 1px solid #1b62d0;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -314,7 +314,7 @@ li {
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
-  background: #B3612E;
+  background: #b3612e;
   width: 124px;
   height: 48px;
   color: #fff;
@@ -390,7 +390,7 @@ li {
   top: 0;
   color: white;
   font-size: 1.2rem;
-  background: #B3612E;
+  background: #b3612e;
   border: 1px;
 }
 
@@ -417,7 +417,7 @@ li {
   font-size: 4.5rem;
   line-height: 5.5rem;
   letter-spacing: 0.37px;
-  color: #B3612E;
+  color: #b3612e;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -441,7 +441,7 @@ li {
   padding: 12px;
   width: 161px;
   height: 48px;
-  background: #B3612E;
+  background: #b3612e;
   flex: none;
   order: 2;
   flex-grow: 0;
@@ -565,7 +565,7 @@ li {
   padding: 12px;
   width: 131px;
   height: 48px;
-  background: #B3612E;
+  background: #b3612e;
   flex: none;
   order: 2;
   flex-grow: 0;
