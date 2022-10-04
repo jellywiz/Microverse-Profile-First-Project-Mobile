@@ -4,8 +4,8 @@ header {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
   width: 100%;
 }
 
@@ -23,10 +23,10 @@ h1 {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 56px;
-  line-height: 64px;
-  letter-spacing: 0.37px;
-  color: #ff6b00;
+  font-size: 3.5rem;
+  line-height: 4rem;
+  letter-spacing: 0.023rem;
+  color: #b3612e;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -38,8 +38,8 @@ h3 {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 32px;
-  line-height: 44px;
+  font-size: 2rem;
+  line-height: 2.75rem;
   display: flex;
   align-items: center;
   color: #091e42;
@@ -63,8 +63,8 @@ li {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 1.5rem;
+  line-height: 2rem;
   display: flex;
   align-items: center;
   color: #fff5e1;
@@ -89,7 +89,7 @@ li {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 1.5rem;
   display: flex;
   align-items: center;
   color: #fff;
@@ -122,8 +122,8 @@ li {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 2rem;
   color: #fff;
   flex: none;
   order: 2;
@@ -170,8 +170,8 @@ li {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 40px;
-  line-height: 52px;
+  font-size: 2.5rem;
+  line-height: 3.25rem;
   display: flex;
   align-items: center;
   color: #1c1a19;
@@ -242,8 +242,8 @@ li {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   color: #091e42;
   flex: none;
   order: 1;
@@ -272,7 +272,7 @@ li {
   width: auto;
   height: 40px;
   background: #fff;
-  border: 1px solid #8993a4;
+  border: 1px solid #1b62d0;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -282,8 +282,8 @@ li {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 0.938rem;
+  line-height: 1.2rem;
   color: #091e42;
   flex: none;
   order: 0;
@@ -308,13 +308,13 @@ li {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 17px;
-  line-height: 24px;
+  font-size: 1.063rem;
+  line-height: 1.5rem;
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
-  background: #ff6b00;
+  background: #b3612e;
   width: 124px;
   height: 48px;
   color: #fff;
@@ -351,8 +351,8 @@ li {
 .project1-text {
   padding: 0 15px 15px 15px;
   font-weight: 400;
-  font-size: 26px;
-  line-height: 24px;
+  font-size: 1.625rem;
+  line-height: 1.5rem;
   color: #fff;
   flex: none;
   order: 1;
@@ -378,8 +378,8 @@ li {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 0.938rem;
+  line-height: 1.2rem;
 }
 
 .Project-btn {
@@ -389,8 +389,8 @@ li {
   left: 0;
   top: 0;
   color: white;
-  font-size: 20px;
-  background: #ff6b00;
+  font-size: 1.2rem;
+  background: #b3612e;
   border: 1px;
 }
 
@@ -414,10 +414,10 @@ li {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 72px;
-  line-height: 88px;
+  font-size: 4.5rem;
+  line-height: 5.5rem;
   letter-spacing: 0.37px;
-  color: #ff6b00;
+  color: #b3612e;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -428,8 +428,8 @@ li {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   color: #f4f5f7;
   flex: none;
   order: 1;
@@ -441,7 +441,7 @@ li {
   padding: 12px;
   width: 161px;
   height: 48px;
-  background: #ff6b00;
+  background: #b3612e;
   flex: none;
   order: 2;
   flex-grow: 0;
@@ -470,8 +470,8 @@ li {
   font-family: 'InaiMathi', sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 32px;
-  line-height: 44px;
+  font-size: 2rem;
+  line-height: 2.75rem;
   align-items: center;
   margin: 0 32px 30px -30px;
 }
@@ -491,8 +491,8 @@ li {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 22px;
-  line-height: 43px;
+  font-size: 1.375rem;
+  line-height: 2.688rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -518,8 +518,8 @@ li {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 32px;
-  line-height: 44px;
+  font-size: 2rem;
+  line-height: 2.75rem;
   text-align: center;
   margin: 0 0 30px 0;
   width: auto;
@@ -545,8 +545,8 @@ li {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 0.938rem;
+  line-height: 1.5rem;
   display: flex;
   align-items: center;
   color: #979493;
@@ -565,7 +565,7 @@ li {
   padding: 12px;
   width: 131px;
   height: 48px;
-  background: #ff6b00;
+  background: #b3612e;
   flex: none;
   order: 2;
   flex-grow: 0;
@@ -663,8 +663,8 @@ li {
     font-family: "Crete Round", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 65px;
-    line-height: 64px;
+    font-size: 4.063rem;
+    line-height: 4rem;
     letter-spacing: 0.37px;
     color: #f55800;
     order: 0;
