@@ -11,19 +11,27 @@
 </head>
 <body>
     <header>
+        <div id="mobile-nav" class="mobile__nav-container hidden">
+            <img id='close-menu' src="./img/icn-close.svg" alt="close button" />
+             <ul class="mobile__nav"> 
+                <li><a class="mobile-navbar-item" id="mobile__nav_portfolio" href="#portfolio">Portfolio</a></li>
+                 <li><a class="mobile-navbar-item" id="mobile__nav_about" href="#aboutmeProject">About</a></li>
+                 <li><a class="mobile-navbar-item" id="mobile__nav_contact" href="#informationsectionProject">Contact</a></li>
+                </ul>
+            </div> 
         <nav class="navbar">
             <a class='logo'>Muzaffer Dler</a>
 
             <div class="desktop-nav">
                 <div class="desktop-header">
-                    <a class="desktop-header-item" href="">Portfolio</a>
-                    <a class="desktop-header-item" href="">About</a>
-                    <a class="desktop-header-item" href="">Contact</a>
+                    <a class="desktop-header-item" href="#portfolio">Portfolio</a>
+                    <a class="desktop-header-item" href="#aboutmeProject">About</a>
+                    <a class="desktop-header-item" href="#informationsectionProject">Contact</a>
                     <img class="email" src="./img/Disabled.png" alt="email button">
                 </div>
             </div>
             <div class="hamburger">
-                <img class="ulnavbar" src="./img/Union.svg" alt="Menu button">
+                <img id="navbar-hamburger" class="ulnavbar" src="./img/Union.svg" alt="Menu button">
             </div>
         </nav>
 
@@ -44,7 +52,7 @@
     </section>
 
     <section class="works">
-        <div class="works-header-row">
+        <div id="portfolio" class="works-header-row">
             <h2 class="h2-works">My Recent Works</h2>
             <img class="h2-vector" src="./img/Vector.svg" alt="Vector_line">
         </div>
@@ -186,7 +194,7 @@
 
     <section class="about-me-container">
         <div class="about-me-headline-container">
-            <div class="about-me-headline">
+            <div id="aboutmeProject" class="about-me-headline">
                 <h2 class="about-me-header">About Me</h2>
                 <p class="about-me-description">Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
                 <button class="about-me-btn-txt">Get My Resume</button>
@@ -224,7 +232,7 @@
         </div>
     </section>
 
-    <section class="form-container">
+    <section id="informationsectionProject" class="form-container">
         <h3 class="form-header">I'm always interested in hearing about new projects, so if you'd like to chat please get in</h2>
     
         <form class="form" action="https://formspree.io/f/xpzndvny" method="post">
@@ -250,6 +258,6 @@
                 <li><img class="social-media-element" src="./img/milenum.png" alt="Milenum-icon"></li>
             </ul>
     </footer>
-    
+    <script src='main.js'></script>
 </body>
 </html>
