@@ -4,6 +4,10 @@ const navClose = document.getElementById('close-menu');
 const navPortfolio = document.getElementById('mobile__nav_portfolio');
 const navAbout = document.getElementById('mobile__nav_about');
 const navContact = document.getElementById('mobile__nav_contact');
+const cardContainer = document.getElementById('card-content');
+const portFolio = document.getElementById('projects-container');
+const buttons = portFolio.getElementsByTagName('button');
+
 function showNavbar() {
   mobileNav.classList.remove('hidden');
   navOpen.classList.add('hidden');
