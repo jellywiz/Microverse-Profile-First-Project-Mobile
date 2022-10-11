@@ -15,7 +15,7 @@ const projectInformation = [
     name: '',
     description: '',
     feature: '',
-    image: '',
+    image: './img/ImgPlaceholder1.png',
     technologies: '',
     liveVersionLink: '',
     sourceLink: '',
@@ -76,7 +76,7 @@ function LoadProjects1() {
   let counter;
   for (counter = 0; counter < 3; counter += 1) {
     cardContainer.innerHTML += `<div class="work">
-                                  <div class="project${[counter + 1]}">
+                                  <div style="background-image: url(${projectInformation[counter].image});" class="project${[counter + 1]}">
                                     <div class="project1-card">
                                       <h3 class="project1-title">${projectInformation[counter].name}</h3>
                                       <p class="project1-text">${projectInformation[counter].description}</p>
@@ -98,7 +98,7 @@ function LoadProjects2() {
   let counter;
   for (counter = 3; counter < projectInformation.length; counter += 1) {
     cardContainer1.innerHTML += `<div class="work">
-                                  <div class="project${[counter + 1]}">
+                                  <div style="background-image: url(${projectInformation[counter].image});" class="project${[counter + 1]}">
                                     <div class="project1-card">
                                       <h3 class="project1-title">${projectInformation[counter].name}</h3>
                                       <p class="project1-text">${projectInformation[counter].description}</p>

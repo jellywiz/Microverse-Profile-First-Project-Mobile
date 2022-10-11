@@ -334,7 +334,6 @@ li {
   width: 100%;
   background-size: cover;
   background-position: center center;
-  background-image: url(../img/ImgPlaceholder1.png);
   display: flex;
   flex-direction: column;
   padding-top: 50px;
@@ -344,7 +343,6 @@ li {
 .project2 {
   background-size: cover;
   background-position: center center;
-  background-image: url(../img/ImgPlaceholder0.png);
   display: flex;
   flex-direction: column;
   padding-top: 50px;
@@ -354,7 +352,6 @@ li {
 .project3 {
   background-size: cover;
   background-position: center center;
-  background-image: url(../img/ImgPlaceholder2.png);
   display: flex;
   flex-direction: column;
   padding-top: 50px;
@@ -881,18 +878,17 @@ li {
   .project2 {
     background-size: cover;
     background-position: center center;
-    background-image: url(../img/ImgPlaceholder0.png);
     display: flex;
     flex-direction: column;
     padding-top: 50px;
     width: 369px;
     height: 435px;
   }
+
   .project6,
   .project3 {
     background-size: cover;
     background-position: center center;
-    background-image: url(../img/ImgPlaceholder2.png);
     display: flex;
     flex-direction: column;
     padding-top: 50px;
@@ -927,7 +923,7 @@ li {
     margin-bottom: 180px;
   }
 
-  .frame44{
+  .frame44 {
     width: auto;
   }
 }
