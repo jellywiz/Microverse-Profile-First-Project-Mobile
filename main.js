@@ -5,6 +5,7 @@ const navPortfolio = document.getElementById('mobile__nav_portfolio');
 const navAbout = document.getElementById('mobile__nav_about');
 const navContact = document.getElementById('mobile__nav_contact');
 const cardContainer = document.getElementById('card-content');
+const cardContainer1 = document.getElementById('card-content1');
 const portFolio = document.getElementById('projects-container');
 const buttons = portFolio.getElementsByTagName('button');
 
@@ -71,6 +72,49 @@ const projectInformation = [
   },
 ];
 
+function LoadProjects1() {
+  let counter;
+  for (counter = 0; counter < 3; counter += 1) {
+    cardContainer.innerHTML += `<div class="work">
+                                  <div class="project${[counter + 1]}">
+                                    <div class="project1-card">
+                                      <h3 class="project1-title">${projectInformation[counter].name}</h3>
+                                      <p class="project1-text">${projectInformation[counter].description}</p>
+                                      <ul class="project-skills">
+                                        <li><p class="project-card-item">html</p>
+                                        </li>
+                                        <li><p class="project-card-item">bootstrap</p>
+                                        </li>
+                                        <li><p class="project-card-item">Ruby</p>
+                                        </li>
+                                      </ul>
+                                      <button class="Project-btn">See Project</button>
+                                    </div>
+                                  </div>`
+}
+}
+
+function LoadProjects2() {
+  let counter;
+  for (counter = 3; counter < projectInformation.length; counter += 1) {
+    cardContainer1.innerHTML += `<div class="work">
+                                  <div class="project${[counter + 1]}">
+                                    <div class="project1-card">
+                                      <h3 class="project1-title">${projectInformation[counter].name}</h3>
+                                      <p class="project1-text">${projectInformation[counter].description}</p>
+                                      <ul class="project-skills">
+                                        <li><p class="project-card-item">html</p>
+                                        </li>
+                                        <li><p class="project-card-item">bootstrap</p>
+                                        </li>
+                                        <li><p class="project-card-item">Ruby</p>
+                                        </li>
+                                      </ul>
+                                      <button class="Project-btn">See Project</button>
+                                    </div>
+                                  </div>`
+}
+}
 function showNavbar() {
   mobileNav.classList.remove('hidden');
   navOpen.classList.add('hidden');
@@ -84,3 +128,6 @@ navClose.addEventListener('click', hideNavbar);
 navPortfolio.addEventListener('click', hideNavbar);
 navAbout.addEventListener('click', hideNavbar);
 navContact.addEventListener('click', hideNavbar);
+
+document.addEventListener('DOMContentLoaded', LoadProjects1, false);
+document.addEventListener('DOMContentLoaded', LoadProjects2, false);
