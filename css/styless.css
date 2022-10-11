@@ -672,6 +672,102 @@ li {
   text-decoration: none;
 }
 
+.popup {
+  position: fixed;
+  padding-top: 80px;
+  width: 100%;
+  background: rgb(0, 0, 0, 0.03);
+  backdrop-filter: blur(16px);
+  height: 800px;
+}
+ 
+.popup-container {
+  background-color: white;
+  width: 85%;
+  auto;
+  padding-bottom: 10px;
+  padding-top: 8px;
+}
+ 
+.popup-container h3 {
+  width: auto;
+}
+ 
+.project-skills-popup {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 12px;
+  padding-left: 0;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  list-style-type: none;
+}
+ 
+.li-item-popup {
+  width: auto;
+  height: auto;
+}
+ 
+.project-card-item-popup {
+  background: rgba(255, 255, 255, 0.24);
+  color: black;
+  'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  border: 1px solid black;
+  padding: 10px;
+}
+ 
+.popup-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
+}
+ 
+.popup-paragraph p {
+  margin-left: auto;
+  margin-right: auto;
+  width: 270px;
+  "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  24px;
+}
+ 
+.popup-btn1 {
+  background-color: #ff6B00;
+  color: #fff;
+  15px;
+  width: 120px;
+  height: 50px;
+  display: inline-block;
+  50px;
+  text-align: center;
+}
+ 
+.popup-btn1 img {
+  position: relative;
+  top: 3px;
+}
+ 
+.popup-btn1 span {
+  auto;
+}
+ 
+.pop-icon {
+  10px;
+}
+ 
+.close-tag {
+  position: relative;
+  left: 290px;
+  bottom: 58px;
+}
+
 @media screen and (min-width: 768px) {
   .desktop-nav {
     display: block;
