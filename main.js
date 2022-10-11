@@ -8,6 +8,7 @@ const cardContainer = document.getElementById('card-content');
 const cardContainer1 = document.getElementById('card-content1');
 const portFolio = document.getElementById('projects-container');
 const buttons = portFolio.getElementsByTagName('button');
+const popUp = document.getElementById('popp');
 
 const projectInformation = [
   {
