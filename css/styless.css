@@ -212,6 +212,7 @@ li {
   flex: none;
   order: 0;
   flex-grow: 0;
+  padding-bottom: 200px;
 }
 
 .placeholder-img {
@@ -328,11 +329,32 @@ li {
   padding-top: 100px;
 }
 
+.project4,
 .project1 {
   width: 100%;
+  background-image: url(../img/ImgPlaceholder1.png);
   background-size: cover;
   background-position: center center;
-  background-image: url(../img/ImgPlaceholder1.png);
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+}
+
+.project5,
+.project2 {
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../img/ImgPlaceholder0.png);
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+}
+
+.project6,
+.project3 {
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../img/ImgPlaceholder2.png);
   display: flex;
   flex-direction: column;
   padding-top: 50px;
@@ -653,6 +675,127 @@ li {
   text-decoration: none;
 }
 
+.popup {
+  position: fixed;
+  padding-top: 80px;
+  width: 100%;
+  background: rgb(0, 0, 0, 0.03);
+  backdrop-filter: blur(16px);
+  height: 800px;
+  overflow: scroll;
+}
+
+.popup-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 95%;
+  margin: auto;
+  padding-bottom: 10px;
+  padding-top: 8px;
+}
+
+.popup-container h3 {
+  width: 90%;
+}
+
+.project-skills-popup {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 0;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  list-style-type: none;
+}
+
+.li-item-popup {
+  width: auto;
+  height: auto;
+}
+
+.project-card-item-popup {
+  background: rgba(255, 255, 255, 0.24);
+  color: black;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.popup-image {
+  width: 90%;
+}
+
+.popup-paragraph p {
+  width: 90%;
+  padding-left: 15px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.popup-paragraph {
+  padding: 1em;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none !important;
+  margin: 0 auto;
+}
+
+.popup-btn1 {
+  background-color: #ff6b00;
+  border: #ff6b00;
+  color: #fff;
+  margin-left: 15px;
+  width: 120px;
+  height: 50px;
+  display: inline-block;
+  line-height: 50px;
+  text-align: center;
+}
+
+.popup-btn1 img {
+  position: relative;
+  top: 3px;
+}
+
+.popup-btn1 span {
+  margin-bottom: auto;
+}
+
+.pop-icon {
+  margin-left: 10px;
+}
+
+.close-tag {
+  padding: 0 40px 0 0;
+}
+
+.header-popup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 20px 0 20px;
+}
+
+.popup-items {
+  padding: 0 0 0 20px;
+}
+
+.popup-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
 @media screen and (min-width: 768px) {
   .desktop-nav {
     display: block;
@@ -755,6 +898,7 @@ li {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    padding-bottom: 0;
   }
 
   .placeholder-img {
@@ -789,6 +933,7 @@ li {
     flex-direction: row;
     align-items: center;
     margin-right: 30px;
+    padding-left: 20px;
   }
 
   .about-me-headline-container {
@@ -853,10 +998,11 @@ li {
     margin-bottom: 85px;
   }
 
+  .project5,
   .project2 {
+    background-image: url(../img/ImgPlaceholder0.png);
     background-size: cover;
     background-position: center center;
-    background-image: url(../img/ImgPlaceholder0.png);
     display: flex;
     flex-direction: column;
     padding-top: 50px;
@@ -864,6 +1010,7 @@ li {
     height: 435px;
   }
 
+  .project6,
   .project3 {
     background-size: cover;
     background-position: center center;
@@ -876,11 +1023,6 @@ li {
   }
 
   .project1 {
-    width: 369px;
-    height: 435px;
-  }
-
-  .project1-hieght {
     width: 369px;
     height: 435px;
   }
@@ -905,5 +1047,134 @@ li {
 
   .hr-aboutme {
     margin-bottom: 180px;
+  }
+
+  .frame44 {
+    width: auto;
+  }
+
+  .popup {
+    position: fixed;
+    padding-top: 80px;
+    width: 100%;
+    background: rgb(0, 0, 0, 0.03);
+    backdrop-filter: blur(16px);
+    height: 100%;
+  }
+
+  .popup-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 85%;
+    margin: auto;
+    padding-bottom: 10px;
+    padding-top: 8px;
+    height: 600px;
+  }
+
+  .popup-container h3 {
+    width: 75%;
+    padding-left: 40px;
+  }
+
+  .popup-items {
+    padding: 0 0 0 40px;
+  }
+
+  .project-skills-popup {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    list-style-type: none;
+    padding: 0 0 0 20px;
+  }
+
+  .li-item-popup {
+    width: auto;
+    height: auto;
+  }
+
+  .project-card-item-popup {
+    background: rgba(255, 255, 255, 0.24);
+    color: black;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    border: 1px solid black;
+    padding: 10px;
+  }
+
+  .popup-image {
+    display: inline-block;
+    margin-left: 40px;
+    margin-right: auto;
+    width: 90%;
+    margin-bottom: 270px;
+  }
+
+  .popup-paragraph {
+    width: 800px;
+    height: 500px;
+    display: inline-block;
+    margin-right: 230px;
+    padding-bottom: 200px;
+  }
+
+  .popup-paragraph p {
+    width: 90%;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  .popup-btn1 {
+    background-color: #ff6b00;
+    color: #fff;
+    margin-left: 15px;
+    width: 120px;
+    height: 50px;
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  .popup-btn1 img {
+    position: relative;
+    top: 3px;
+  }
+
+  .popup-btn1 span {
+    margin-bottom: auto;
+  }
+
+  .pop-icon {
+    margin-left: 10px;
+  }
+
+  .popup-button {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .popup-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .img-p-ppopup {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
   }
 }
