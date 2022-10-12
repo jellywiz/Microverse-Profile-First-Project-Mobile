@@ -108,9 +108,10 @@ function LoadProjects1() {
       (p) => parseInt(p.id, 10) === parseInt(pId, 10),
     );
 
-    popUp.innerHTML = `<div class="popup-container">
+    popUp.innerHTML = 
+    `<div class="popup-container">
                     <div class="header-popup">
-                      <h3>${project[0].name}</h2>
+                      <h2>${project[0].name}</h2>
                       <img id='close-menu-down' class="close-tag" src="./img/icn-close.svg" alt="close button" />
                     </div>
                     
@@ -123,11 +124,15 @@ function LoadProjects1() {
                     </div>
                   
                     <div class="popup-content">
-                      <div class="img-p-ppopup">
-                          <img class="popup-image" src="${project[0].image}" alt="">
-                          <div class="popup-paragraph">
-                              <p>${project[0].description}</p>
+
+                          <div class="img-p-ppopup">
+                              <img class="popup-image" src="${project[0].image}" alt="">
                           </div>
+
+                          <div class="popup-paragraph">
+                              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.</p>
+                          </div>
+
                       </div>
                     
                       <div class="popup-button">
@@ -195,18 +200,22 @@ function LoadProjects2() {
                     </div>
                   
                     <div class="popup-content">
-                      <div class="img-p-ppopup">
-                          <img class="popup-image" src="${project[0].image}" alt="">
-                          <div class="popup-paragraph">
-                              <p>${project[0].feature}</p>
+
+                          <div class="img-p-ppopup">
+                              <img class="popup-image" src="${project[0].image}" alt="">
                           </div>
+
+                          <div class="popup-paragraph">
+                              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.</p>
+                              <div class="popup-button">
+                              <a href="${project[0].liveVersionLink}" target="_blank"><button class="popup-btn1"> <span>See Live</span> <img class="pop-icon" src="./img/Icon-Export.svg" alt=""> </button></a>
+                              <a href="${project[0].sourceLink}" target="_blank"><button class="popup-btn1"> <span>See Source</span> <img class="pop-icon" src="./img/Frame-github.svg" alt=""> </button></a>
+                              </div>
+                          </div>
+
                       </div>
                     
-                      <div class="popup-button">
-                          <a href="${project[0].liveVersionLink}" target="_blank"><button class="popup-btn1"> <span>See Live</span> <img class="pop-icon" src="./img/Icon-Export.svg" alt=""> </button></a>
-                          <a href="${project[0].sourceLink}" target="_blank"><button class="popup-btn1"> <span>See Source</span> <img class="pop-icon" src="./img/Frame-github.svg" alt=""> </button></a>
-                      </div>
-                    </div>
+
                   </div>`;
 
     popUp.classList.remove('hidden');
