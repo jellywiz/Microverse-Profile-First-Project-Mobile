@@ -8,7 +8,8 @@ const cardContainer = document.getElementById('card-content');
 const cardContainer1 = document.getElementById('card-content1');
 const portFolio = document.getElementById('projects-container');
 const buttons = portFolio.getElementsByTagName('button');
-const popUp = document.getElementById('popp');
+const popUp = document.getElementById('popupp');
+const generalDocument = document.getElementById('html');
 
 const projectInformation = [
   {
@@ -16,7 +17,7 @@ const projectInformation = [
     name: '',
     description: '',
     feature: '',
-    image: './img/ImgPlaceholder1.png',
+    image: './img/SnapshootPortfolio.png',
     technologies: ['html', 'bootstrap', 'Ruby'],
     liveVersionLink: '',
     sourceLink: '',
@@ -26,7 +27,7 @@ const projectInformation = [
     name: 'Data Dashboard',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     feature: 'This is a very basic suuvey that can be modified at your convinience',
-    image: './img/ImgPlaceholder0.png',
+    image: './img/SnapshootPortfolio.png',
     technologies: ['html', 'bootstrap', 'Ruby'],
     liveVersionLink: 'https://github.com/jellywiz/Microverse-Profile-First-Project-Mobile',
     sourceLink: 'https://github.com/jellywiz/Microverse-Profile-First-Project-Mobile',
@@ -36,7 +37,7 @@ const projectInformation = [
     name: 'Technical Documentation',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     feature: 'A fixed left panel that uses the complete screen hieght and the rest of the screen is for the documentation and detail information',
-    image: './img/ImgPlaceholder2.png',
+    image: './img/SnapshootPortfolio.png',
     technologies: ['html', 'bootstrap', 'Ruby'],
     liveVersionLink: 'https://github.com/jellywiz/Microverse-Profile-First-Project-Mobile',
     sourceLink: 'https://github.com/jellywiz/Microverse-Profile-First-Project-Mobile',
@@ -46,7 +47,7 @@ const projectInformation = [
     name: 'Technical Documentation',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     feature: 'A page that uses all the inpt types, and filters for them ina good shape and send results.',
-    image: './img/ImgPlaceholder1.png',
+    image: './img/SnapshootPortfolio.png',
     technologies: ['html', 'bootstrap', 'Ruby'],
     liveVersionLink: 'https://github.com/jellywiz/Microverse-Profile-First-Project-Mobile',
     sourceLink: 'https://github.com/jellywiz/Microverse-Profile-First-Project-Mobile',
@@ -56,7 +57,7 @@ const projectInformation = [
     name: 'Data Dashboard',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     feature: 'This is a very basic suuvey that can be modified at your convinience',
-    image: './img/ImgPlaceholder0.png',
+    image: './img/SnapshootPortfolio.png',
     technologies: ['html', 'bootstrap', 'Ruby'],
     liveVersionLink: 'https://github.com/jellywiz/Microverse-Profile-First-Project-Mobile',
     sourceLink: 'https://github.com/jellywiz/Microverse-Profile-First-Project-Mobile',
@@ -66,7 +67,7 @@ const projectInformation = [
     name: 'Technical Documentation',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     feature: 'A fixed left panel that uses the complete screen hieght and the rest of the screen is for the documentation and detail information',
-    image: './img/ImgPlaceholder2.png',
+    image: './img/SnapshootPortfolio.png',
     technologies: ['html', 'bootstrap', 'Ruby'],
     liveVersionLink: 'https://github.com/jellywiz/Microverse-Profile-First-Project-Mobile',
     sourceLink: 'https://github.com/jellywiz/Microverse-Profile-First-Project-Mobile',
@@ -75,49 +76,148 @@ const projectInformation = [
 
 function LoadProjects1() {
   let counter;
- 
+
   for (counter = 0; counter < 3; counter += 1) {
-    let tech = 0;
+    const tech = 0;
     cardContainer.innerHTML += `<div class="work">
-                                  <div style="background-image: url(${projectInformation[counter].image});" class="project${[counter + 1]}">
+                                  <div  class="project${[counter + 1]}">
                                     <div class="project1-card">
                                       <h3 class="project1-title">${projectInformation[counter].name}</h3>
                                       <p class="project1-text">${projectInformation[counter].description}</p>
                                       <ul class="project-skills">
-                                        <li><p class="project-card-item">${projectInformation[counter].technologies[tech++]}</p>
+                                        <li><p class="project-card-item">${projectInformation[counter].technologies[tech]}</p>
                                         </li>
-                                        <li><p class="project-card-item">${projectInformation[counter].technologies[tech++]}</p>
+                                        <li><p class="project-card-item">${projectInformation[counter].technologies[tech + 1]}</p>
                                         </li>
-                                        <li><p class="project-card-item">${projectInformation[counter].technologies[tech++]}</p>
+                                        <li><p class="project-card-item">${projectInformation[counter].technologies[tech + 2]}</p>
                                         </li>
                                       </ul>
-                                      <button class="Project-btn">See Project</button>
+                                      <button data-target="${projectInformation[counter].id}" class="Project-btn">See Project</button>
                                     </div>
-                                  </div>`
-}
+                                  </div>`;
+  }
+
+  function hideModal() {
+    popUp.innerHTML = '';
+    popUp.classList.add('hidden');
+    generalDocument.classList.remove('scroll-null');
+  }
+  function showModal(button) {
+    const pId = button.target.getAttribute('data-target');
+    const project = projectInformation.filter(
+      (p) => parseInt(p.id, 10) === parseInt(pId, 10),
+    );
+
+    popUp.innerHTML = `<div class="popup-container">
+                    <div class="header-popup">
+                      <h3>${project[0].name}</h2>
+                      <img id='close-menu-down' class="close-tag" src="./img/icn-close.svg" alt="close button" />
+                    </div>
+                    
+                    <div class="popup-items">
+                        <ul class="project-skills-popup">
+                            <li class="li-item-popup"><p class="project-card-item-popup">${project[0].technologies[0]}</p></li>
+                            <li class="li-item-popup"><p class="project-card-item-popup">${project[0].technologies[1]}</p></li>
+                            <li class="li-item-popup"><p class="project-card-item-popup">${project[0].technologies[2]}</p></li>
+                        </ul>
+                    </div>
+                  
+                    <div class="popup-content">
+                      <div class="img-p-ppopup">
+                          <img class="popup-image" src="${project[0].image}" alt="">
+                          <div class="popup-paragraph">
+                              <p>${project[0].description}</p>
+                          </div>
+                      </div>
+                    
+                      <div class="popup-button">
+                      <a href="${project[0].liveVersionLink}" target="_blank"><button class="popup-btn1"> <span>See Live</span> <img class="pop-icon" src="./img/Icon-Export.svg" alt=""> </button></a>
+                      <a href="${project[0].sourceLink}" target="_blank"><button class="popup-btn1"> <span>See Source</span> <img class="pop-icon" src="./img/Frame-github.svg" alt=""> </button></a>
+                      </div>
+                    </div>
+                  </div>`;
+
+    popUp.classList.remove('hidden');
+    const popUpClose = document.getElementById('close-menu-down');
+    popUpClose.addEventListener('click', hideModal);
+    generalDocument.classList.add('scroll-null');
+  }
+  let i;
+  for (i = 0; i < buttons.length; i += 1) {
+    buttons[i].addEventListener('click', showModal.bind(buttons[i]));
+  }
 }
 
 function LoadProjects2() {
   let counter;
   for (counter = 3; counter < projectInformation.length; counter += 1) {
-    let tech = 0;
+    const tech = 0;
     cardContainer1.innerHTML += `<div class="work">
-                                  <div style="background-image: url(${projectInformation[counter].image});" class="project${[counter + 1]}">
+                                  <div class="project${[counter + 1]}">
                                     <div class="project1-card">
                                       <h3 class="project1-title">${projectInformation[counter].name}</h3>
                                       <p class="project1-text">${projectInformation[counter].description}</p>
                                       <ul class="project-skills">
-                                        <li><p class="project-card-item">${projectInformation[counter].technologies[tech++]}</p>
+                                        <li><p class="project-card-item">${projectInformation[counter].technologies[tech]}</p>
                                         </li>
-                                        <li><p class="project-card-item">${projectInformation[counter].technologies[tech++]}</p>
+                                        <li><p class="project-card-item">${projectInformation[counter].technologies[tech + 1]}</p>
                                         </li>
-                                        <li><p class="project-card-item">${projectInformation[counter].technologies[tech++]}</p>
+                                        <li><p class="project-card-item">${projectInformation[counter].technologies[tech + 2]}</p>
                                         </li>
                                       </ul>
-                                      <button class="Project-btn">See Project</button>
+                                      <button data-target="${projectInformation[counter].id}" class="Project-btn">See Project</button>
                                     </div>
-                                  </div>`
-}
+                                  </div>`;
+  }
+  function hideModal() {
+    popUp.innerHTML = '';
+    popUp.classList.add('hidden');
+    generalDocument.classList.remove('scroll-null');
+  }
+  function showModal(button) {
+    const pId = button.target.getAttribute('data-target');
+    const project = projectInformation.filter(
+      (p) => parseInt(p.id, 10) === parseInt(pId, 10),
+    );
+
+    popUp.innerHTML = `<div class="popup-container">
+                    <div class="header-popup">
+                      <h3>${project[0].name}</h2>
+                      <img id='close-menu-down' class="close-tag" src="./img/icn-close.svg" alt="close button" />
+                    </div>
+                    
+                    <div class="popup-items">
+                        <ul class="project-skills-popup">
+                            <li class="li-item-popup"><p class="project-card-item-popup">${project[0].technologies[0]}</p></li>
+                            <li class="li-item-popup"><p class="project-card-item-popup">${project[0].technologies[1]}</p></li>
+                            <li class="li-item-popup"><p class="project-card-item-popup">${project[0].technologies[2]}</p></li>
+                        </ul>
+                    </div>
+                  
+                    <div class="popup-content">
+                      <div class="img-p-ppopup">
+                          <img class="popup-image" src="${project[0].image}" alt="">
+                          <div class="popup-paragraph">
+                              <p>${project[0].feature}</p>
+                          </div>
+                      </div>
+                    
+                      <div class="popup-button">
+                          <a href="${project[0].liveVersionLink}" target="_blank"><button class="popup-btn1"> <span>See Live</span> <img class="pop-icon" src="./img/Icon-Export.svg" alt=""> </button></a>
+                          <a href="${project[0].sourceLink}" target="_blank"><button class="popup-btn1"> <span>See Source</span> <img class="pop-icon" src="./img/Frame-github.svg" alt=""> </button></a>
+                      </div>
+                    </div>
+                  </div>`;
+
+    popUp.classList.remove('hidden');
+    const popUpClose = document.getElementById('close-menu-down');
+    popUpClose.addEventListener('click', hideModal);
+    generalDocument.classList.add('scroll-null');
+  }
+  let i;
+  for (i = 0; i < buttons.length; i += 1) {
+    buttons[i].addEventListener('click', showModal.bind(buttons[i]));
+  }
 }
 function showNavbar() {
   mobileNav.classList.remove('hidden');

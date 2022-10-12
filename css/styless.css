@@ -332,6 +332,7 @@ li {
 .project4,
 .project1 {
   width: 100%;
+  background-image: url(../img/ImgPlaceholder1.png);
   background-size: cover;
   background-position: center center;
   display: flex;
@@ -343,6 +344,7 @@ li {
 .project2 {
   background-size: cover;
   background-position: center center;
+  background-image: url(../img/ImgPlaceholder0.png);
   display: flex;
   flex-direction: column;
   padding-top: 50px;
@@ -352,6 +354,7 @@ li {
 .project3 {
   background-size: cover;
   background-position: center center;
+  background-image: url(../img/ImgPlaceholder2.png);
   display: flex;
   flex-direction: column;
   padding-top: 50px;
@@ -731,7 +734,7 @@ li {
   margin-left: auto;
   margin-right: auto;
   width: 270px;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -977,6 +980,7 @@ li {
 
   .project5,
   .project2 {
+    background-image: url(../img/ImgPlaceholder0.png);
     background-size: cover;
     background-position: center center;
     display: flex;
@@ -990,6 +994,7 @@ li {
   .project3 {
     background-size: cover;
     background-position: center center;
+    background-image: url(../img/ImgPlaceholder2.png);
     display: flex;
     flex-direction: column;
     padding-top: 50px;
@@ -1081,7 +1086,7 @@ li {
     display: inline-block;
     margin-left: 40px;
     margin-right: auto;
-    width: 41.188rem;
+    width: 600px;
   }
 
   .popup-paragraph {
@@ -1093,7 +1098,7 @@ li {
 
   .popup-paragraph p {
     width: 424px;
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -1123,7 +1128,6 @@ li {
   .pop-icon {
     margin-left: 10px;
   }
-
 
   .popup-button {
     margin-left: 800px;
