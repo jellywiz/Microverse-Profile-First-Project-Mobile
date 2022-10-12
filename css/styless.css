@@ -682,6 +682,7 @@ li {
   background: rgb(0, 0, 0, 0.03);
   backdrop-filter: blur(16px);
   height: 800px;
+  overflow: scroll;
 }
 
 .popup-container {
@@ -749,6 +750,7 @@ li {
 
 .popup-btn1 {
   background-color: #ff6b00;
+  border: #ff6b00;
   color: #fff;
   margin-left: 15px;
   width: 120px;

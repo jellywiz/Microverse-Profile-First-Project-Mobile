@@ -108,8 +108,7 @@ function LoadProjects1() {
       (p) => parseInt(p.id, 10) === parseInt(pId, 10),
     );
 
-    popUp.innerHTML = 
-    `<div class="popup-container">
+    popUp.innerHTML = `<div class="popup-container">
                     <div class="header-popup">
                       <h2>${project[0].name}</h2>
                       <img id='close-menu-down' class="close-tag" src="./img/icn-close.svg" alt="close button" />
@@ -187,7 +186,7 @@ function LoadProjects2() {
 
     popUp.innerHTML = `<div class="popup-container">
                     <div class="header-popup">
-                      <h3>${project[0].name}</h2>
+                      <h3>Multi Post Stories</h3>
                       <img id='close-menu-down' class="close-tag" src="./img/icn-close.svg" alt="close button" />
                     </div>
                     
