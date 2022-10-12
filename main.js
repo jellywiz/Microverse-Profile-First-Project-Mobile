@@ -243,3 +243,20 @@ navContact.addEventListener('click', hideNavbar);
 
 document.addEventListener('DOMContentLoaded', LoadProjects1, false);
 document.addEventListener('DOMContentLoaded', LoadProjects2, false);
+
+const form = document.getElementById('contactMe');
+const erroMessageContainer = document.getElementById('error_message');
+const message = 'Email address should be in lowercase letters only.';
+const inputEmail = document.getElementById('email');
+
+form.addEventListener('submit', (event) => {
+  const regix = /[A-Z]/;
+
+  if (regix.test(inputEmail.value)) {
+    erroMessageContainer.innerHTML = message;
+    erroMessageContainer.classList.remove('hidden');
+    event.preventDefault();
+  } else if (!erroMessageContainer.classList.classname === 'hidden') {
+    erroMessageContainer.classList.add('hidden');
+  }
+});
