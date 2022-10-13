@@ -274,4 +274,31 @@ function saveData() {
   localStorage.setItem('data', JSON.stringify(data));
 }
 
+let formObject = JSON.parse(localStorage.getItem('data'));
+if (!formObject) {
+  formObject = {
+    fullname: '',
+    email: '',
+    comment: '',
+  };
+  saveData();
+}
+
+fullname.value = formObject.fullname;
+fullname.addEventListener('change', (e) => {
+  formObject.fullname = e.target.value;
+  localStorage.setItem('data', JSON.stringify(formObject));
+});
+
+email.value = formObject.email;
+email.addEventListener('change', (e) => {
+  formObject.email = e.target.value;
+  localStorage.setItem('data', JSON.stringify(formObject));
+});
+
+comment.value = formObject.comment;
+comment.addEventListener('change', (e) => {
+  formObject.comment = e.target.value;
+  localStorage.setItem('data', JSON.stringify(formObject));
+});
 
