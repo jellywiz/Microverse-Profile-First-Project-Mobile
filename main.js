@@ -301,4 +301,3 @@ comment.addEventListener('change', (e) => {
   formObject.comment = e.target.value;
   localStorage.setItem('data', JSON.stringify(formObject));
 });
-
