@@ -260,3 +260,18 @@ form.addEventListener('submit', (event) => {
     erroMessageContainer.classList.add('hidden');
   }
 });
+
+const fullname = document.querySelector('#fullname');
+const email = document.querySelector('#email');
+const comment = document.querySelector('#text');
+
+function saveData() {
+  const data = {
+    fieldName: fullname.value,
+    fieldEmail: email.value,
+    fieldComment: comment.value,
+  };
+  localStorage.setItem('data', JSON.stringify(data));
+}
+
+
