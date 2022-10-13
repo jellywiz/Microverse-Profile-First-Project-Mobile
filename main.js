@@ -260,3 +260,44 @@ form.addEventListener('submit', (event) => {
     erroMessageContainer.classList.add('hidden');
   }
 });
+
+const fullname = document.querySelector('#fullname');
+const email = document.querySelector('#email');
+const comment = document.querySelector('#text');
+
+function saveData() {
+  const data = {
+    fieldName: fullname.value,
+    fieldEmail: email.value,
+    fieldComment: comment.value,
+  };
+  localStorage.setItem('data', JSON.stringify(data));
+}
+
+let formObject = JSON.parse(localStorage.getItem('data'));
+if (!formObject) {
+  formObject = {
+    fullname: '',
+    email: '',
+    comment: '',
+  };
+  saveData();
+}
+
+fullname.value = formObject.fullname;
+fullname.addEventListener('change', (e) => {
+  formObject.fullname = e.target.value;
+  localStorage.setItem('data', JSON.stringify(formObject));
+});
+
+email.value = formObject.email;
+email.addEventListener('change', (e) => {
+  formObject.email = e.target.value;
+  localStorage.setItem('data', JSON.stringify(formObject));
+});
+
+comment.value = formObject.comment;
+comment.addEventListener('change', (e) => {
+  formObject.comment = e.target.value;
+  localStorage.setItem('data', JSON.stringify(formObject));
+});
