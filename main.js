@@ -144,7 +144,7 @@ function LoadProjects1() {
     popUp.classList.remove('hidden');
     const popUpClose = document.getElementById('close-menu-down');
     popUpClose.addEventListener('click', hideModal);
-    generalDocument.classList.add('scroll');
+    generalDocument.classList.add('scroll-null');
   }
   let i;
   for (i = 0; i < buttons.length; i += 1) {
@@ -176,7 +176,7 @@ function LoadProjects2() {
   function hideModal() {
     popUp.innerHTML = '';
     popUp.classList.add('hidden');
-    generalDocument.classList.remove('scroll');
+    generalDocument.classList.remove('scroll-null');
   }
   function showModal(button) {
     const pId = button.target.getAttribute('data-target');
@@ -220,7 +220,7 @@ function LoadProjects2() {
     popUp.classList.remove('hidden');
     const popUpClose = document.getElementById('close-menu-down');
     popUpClose.addEventListener('click', hideModal);
-    generalDocument.classList.add('scroll');
+    generalDocument.classList.add('scroll-null');
   }
   let i;
   for (i = 0; i < buttons.length; i += 1) {
