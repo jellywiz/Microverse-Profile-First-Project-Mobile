@@ -332,7 +332,7 @@ li {
 .project4,
 .project1 {
   width: 100%;
-  background-image: url(../img/ImgPlaceholder1.png);
+  background-image: url(../img/myproject/KFD.png);
   background-size: cover;
   background-position: center center;
   display: flex;
@@ -344,7 +344,7 @@ li {
 .project2 {
   background-size: cover;
   background-position: center center;
-  background-image: url(../img/ImgPlaceholder0.png);
+  background-image: url(../img/myproject/FYP2Project.png);
   display: flex;
   flex-direction: column;
   padding-top: 50px;
@@ -354,7 +354,7 @@ li {
 .project3 {
   background-size: cover;
   background-position: center center;
-  background-image: url(../img/ImgPlaceholder2.png);
+  background-image: url(../img/myproject/captone.png);
   display: flex;
   flex-direction: column;
   padding-top: 50px;
@@ -1000,7 +1000,7 @@ li {
 
   .project5,
   .project2 {
-    background-image: url(../img/ImgPlaceholder0.png);
+    background-image: url(../img/myproject/FYP2Project.png);
     background-size: cover;
     background-position: center center;
     display: flex;
@@ -1014,7 +1014,7 @@ li {
   .project3 {
     background-size: cover;
     background-position: center center;
-    background-image: url(../img/ImgPlaceholder2.png);
+    background-image: url(../img/myproject/captone.png);
     display: flex;
     flex-direction: column;
     padding-top: 50px;
@@ -1070,7 +1070,7 @@ li {
     margin: auto;
     padding-bottom: 10px;
     padding-top: 8px;
-    height: 600px;
+    height: 800px;
   }
 
   .popup-container h3 {

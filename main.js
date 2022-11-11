@@ -14,31 +14,31 @@ const generalDocument = document.getElementById('html');
 const projectInformation = [
   {
     id: 0,
-    name: '',
-    description: '',
-    feature: '',
-    image: './img/SnapshootPortfolio.png',
-    technologies: ['html', 'bootstrap', 'Ruby'],
-    liveVersionLink: '',
-    sourceLink: '',
+    name: 'KFD',
+    description: 'KFD is a platform to connect Donors to people where they can either request donations or donate extra food.',
+    feature: 'This is an Web application where users can request donations or donate extra food.',
+    image: './img/myproject/KFD.png',
+    technologies: ['html', 'bootstrap', 'React'],
+    liveVersionLink: 'https://compassionate-bose-b7199a.netlify.app/#/',
+    sourceLink: 'https://github.com/jellywiz/KFD',
   },
   {
     id: 1,
-    name: 'Data Dashboard',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    feature: 'This is a very basic suuvey that can be modified at your convinience',
-    image: './img/SnapshootPortfolio.png',
-    technologies: ['html', 'bootstrap', 'Ruby'],
+    name: 'Employee Attendance Management System',
+    description: "Employee Attendance Management System is a web application that helps to manage employees' attendance.",
+    feature: 'This is a Web application which is designed to manage the attendance of employees in an organization.',
+    image: './img/myproject/FYP2Project.jpeg',
+    technologies: ['html', 'bootstrap', 'Laravel'],
     liveVersionLink: 'https://github.com/jellywiz/Microverse-Profile-First-Project-Mobile',
     sourceLink: 'https://github.com/jellywiz/Microverse-Profile-First-Project-Mobile',
   },
   {
     id: 2,
-    name: 'Technical Documentation',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    feature: 'A fixed left panel that uses the complete screen hieght and the rest of the screen is for the documentation and detail information',
-    image: './img/SnapshootPortfolio.png',
-    technologies: ['html', 'bootstrap', 'Ruby'],
+    name: 'Capstion Project',
+    description: 'Capstion Project is a web application for an event that accoured in Kurdistan Iraq.',
+    feature: 'This website will show all the necessary information concerning the conference including the speakers, program or event, sponsors, and other relevant pieces of information.',
+    image: './img/myproject/captone-full.png',
+    technologies: ['html', 'bootstrap', 'JavaScript'],
     liveVersionLink: 'https://github.com/jellywiz/Microverse-Profile-First-Project-Mobile',
     sourceLink: 'https://github.com/jellywiz/Microverse-Profile-First-Project-Mobile',
   },
@@ -129,7 +129,7 @@ function LoadProjects1() {
                           </div>
 
                           <div class="popup-paragraph">
-                              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.</p>
+                              <p>${project[0].feature}</p>
                           </div>
 
                       </div>
@@ -205,7 +205,7 @@ function LoadProjects2() {
                           </div>
 
                           <div class="popup-paragraph">
-                              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.</p>
+                              <p>${project[0].feature}</p>
                               <div class="popup-button">
                               <a href="${project[0].liveVersionLink}" target="_blank"><button class="popup-btn1"> <span>See Live</span> <img class="pop-icon" src="./img/Icon-Export.svg" alt=""> </button></a>
                               <a href="${project[0].sourceLink}" target="_blank"><button class="popup-btn1"> <span>See Source</span> <img class="pop-icon" src="./img/Frame-github.svg" alt=""> </button></a>
